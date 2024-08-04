@@ -29,7 +29,7 @@ DecimalFormat formatter;
         View inflate =
                 LayoutInflater.from(parent.getContext()).inflate(R.layout.viewholder_crypto,parent,false);
 
-        return null;
+        return new Viewholder(inflate);
     }
 
     @Override

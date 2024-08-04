@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<domain> domainArrayList = new ArrayList<>();
         domainArrayList.add(new domain("bitcoin","BTX",
                 1234.32,2.13,lineData,1234.12,0.1234));
-        domainArrayList.add(new domain("etheruem","ETH",
+        domainArrayList.add(new domain("etherium","ETH",
                 2134.21,-1.13,lineData2,6545.65,0.12345));
         domainArrayList.add(new domain("trox","ROX",
                 6543.21,0.73,lineData3,31234.12,0.02154));
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void recyclerViewStock()
     {
-        binding.cryptoView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL, false));
+        binding.stockView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
 
         //this is sample data to enter
         //will use Api for live services
